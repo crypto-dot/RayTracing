@@ -15,19 +15,23 @@ const double infinity = std::numeric_limits<double>::infinity();
 const double pi = 3.1415926535897932385;
 //Below is an alternative way of generating random values
 //It is much faster, but suffers from a lack of randomness
-/*inline double random_double() {
+inline double randomDouble() {
     // Returns a random real in [0,1).
     return rand() / (RAND_MAX + 1.0);
 }
-inline double random_double(double min, double max) {
+inline double randomDouble(double min, double max) {
     // Returns a random real in [min,max).
-    return min + (max-min)*random_double();
-}*/
-static inline double randomDouble(double min = 0.0,double max =1.0){
-    std::uniform_real_distribution<double> distribution(min,max);
-    std::mt19937_64 mtgenerator{};
-    return distribution(mtgenerator);
+    return min + (max-min)*randomDouble();
 }
+//The code below produces artifacts and runs slowly on later iterations
+//Not entirely sure why may come back to it later
+/*
+static inline double randomDouble(double min =0.0,double max = 0.0) {
+    static std::uniform_real_distribution<double> distribution(min,max);
+    static std::mt19937 generator;
+    return distribution(generator);
+}
+*/
 static inline double clamp(double x,double min,double max){
     if(x < min){
         return min;
