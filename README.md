@@ -15,4 +15,4 @@ When working on this project I typically found that new code was being built on 
 
 <img width="617" alt="Image1" src="https://user-images.githubusercontent.com/78282234/139567760-b41cb32d-3455-42af-9f1b-15be6d9d0b67.png">
 
-Three spheres diffused using true Lambertian reflections
+Three matte spheres diffused using true Lambertian reflections
