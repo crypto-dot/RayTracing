@@ -2,7 +2,7 @@
 
 ## Practicing with Ray Tracing Technology Using C++
 
-This project has helped me better understand how to use C++ in terms of creating actual software. I want to personally thank Steve Hollasch as he has helped answer some of my questions on this topic. Since this project was more of a learning experience no outside libraries were used.
+This project has helped me better understand how to use C++ in terms of creating actual software. I want to personally thank Steve Hollasch as he has helped answer some of my questions on this topic. Since this project was more of a learning experience no outside libraries were used. Currently the project is ongoing and not fully complete.
 
 ## Images
 
